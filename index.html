@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Escolares - Criado por Jayme</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            animation: changeColor 10s infinite;
+            color: #333;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: auto;
+            padding: 20px;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: #ff5733; }
+            25% { background-color: #33ff57; }
+            50% { background-color: #3357ff; }
+            75% { background-color: #f3ff33; }
+            100% { background-color: #ff5733; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #2980b9;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Eventos Escolares - Criado por Jayme</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#festas">Festas</a></li>
+                    <li><a href="#datas">Datas Comemorativas</a></li>
+                    <li><a href="#sobre">Sobre Jayme</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="festas">
+                <h2>Festas</h2>
+                <article>
+                    <h3>Festa Junina</h3>
+                    <p>A Festa Junina é uma celebração típica do Brasil, com danças, comidas típicas e muita diversão. Os alunos participam de quadrilhas e outras atividades.</p>
+                    <p><strong>Data:</strong> 24 de junho</p>
+                    <p><strong>Atividades:</strong> Jogos, danças, comidas típicas como pipoca e canjica.</p>
+                </article>
+                <article>
+                    <h3>Páscoa</h3>
+                    <p>A Páscoa é um momento de reflexão e celebração. Nossos alunos participam de atividades educativas e fazem uma caça aos ovos.</p>
+                    <p><strong>Data:</strong> Varia (domingo de Páscoa)</p>
+                    <p><strong>Atividades:</strong> Caça aos ovos, confecção de cartões e aulas sobre a história da Páscoa.</p>
+                </article>
+                <article>
+                    <h3>Dia da Independência</h3>
+                    <p>Comemoramos a independência do Brasil com desfiles e apresentações culturais que valorizam nossa história.</p>
+                    <p><strong>Data:</strong> 7 de setembro</p>
+                    <p><strong>Atividades:</strong> Desfile cívico, apresentações musicais e teatrais.</p>
+                </article>
+                <article>
+                    <h3>Setembro Amarelo</h3>
+                    <p>Setembro Amarelo é uma campanha de prevenção ao suicídio. Realizamos palestras e atividades para conscientizar e apoiar nossos alunos.</p>
+                    <p><strong>Data:</strong> Todo o mês de setembro</p>
+                    <p><strong>Atividades:</strong> Palestras, debates e atividades de conscientização.</p>
+                </article>
+            </section>
+            <section id="sobre">
+                <h2>Sobre Jayme</h2>
+                <p>Olá! Sou Jayme e criei este site para compartilhar informações sobre os eventos escolares que tornam nossa escola especial. Espero que você aproveite!</p>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Direitos autorais © 2024 Jayme</p>
+        </footer>
+    </div>
+</body>
+</html>
